@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TV9-QQ-Ypu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNp-5g-vmW" colorLabel="IBBuiltInLabel-Blue">
-                                <rect key="frame" x="58" y="204" width="260" height="260"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNp-5g-vmW" colorLabel="IBBuiltInLabel-Blue">
+                                <rect key="frame" x="38" y="184" width="300" height="300"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYL-7L-d1G" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
-                                        <rect key="frame" x="140" y="20" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rYL-7L-d1G" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                        <rect key="frame" x="160" y="20" width="120" height="100"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Terms of Use"/>
@@ -44,8 +45,8 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo06L.jpg"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um0-fy-MIr" customClass="JGFlipMenuItem" customModule="JGFlipMenu">
-                                        <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="um0-fy-MIr" customClass="JGFlipMenuItem" customModule="JGFlipMenu">
+                                        <rect key="frame" x="20" y="20" width="120" height="100"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="About"/>
@@ -68,8 +69,8 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo03L.jpg"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHc-Xf-d8i" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="140" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHc-Xf-d8i" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="140" width="120" height="100"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Tutorial"/>
@@ -93,8 +94,8 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="backImage" value="NatGeo01L.jpg"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-LK-fhv" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
-                                        <rect key="frame" x="140" y="140" width="100" height="100"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-LK-fhv" customClass="JGFlipMenuItem" customModule="JGFlipMenu" customModuleProvider="target">
+                                        <rect key="frame" x="160" y="140" width="120" height="100"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="title" value="Privacy Policy"/>
@@ -126,34 +127,117 @@
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="width" secondItem="rYL-7L-d1G" secondAttribute="width" id="7fM-Lf-G3z"/>
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="width" secondItem="bHc-Xf-d8i" secondAttribute="width" id="8z6-Ln-Y0i"/>
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="height" secondItem="um0-fy-MIr" secondAttribute="height" id="Al1-Ix-4We"/>
+                                    <constraint firstAttribute="bottom" secondItem="OjB-LK-fhv" secondAttribute="bottom" constant="20" id="DSa-to-0ff"/>
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="width" secondItem="um0-fy-MIr" secondAttribute="width" id="KFY-v8-vSA"/>
                                     <constraint firstItem="um0-fy-MIr" firstAttribute="top" secondItem="fNp-5g-vmW" secondAttribute="top" constant="20" id="MYh-Ig-T48"/>
                                     <constraint firstItem="rYL-7L-d1G" firstAttribute="top" secondItem="fNp-5g-vmW" secondAttribute="top" constant="20" id="ND6-pY-iPW"/>
+                                    <constraint firstAttribute="width" secondItem="fNp-5g-vmW" secondAttribute="height" multiplier="1:1" id="QrW-zK-XJA"/>
                                     <constraint firstItem="bHc-Xf-d8i" firstAttribute="top" secondItem="um0-fy-MIr" secondAttribute="bottom" constant="20" id="TDV-Gx-KEF"/>
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="height" secondItem="bHc-Xf-d8i" secondAttribute="height" id="Y0t-AP-Ze8"/>
                                     <constraint firstAttribute="trailing" secondItem="rYL-7L-d1G" secondAttribute="trailing" constant="20" id="ZXG-de-ydc"/>
-                                    <constraint firstAttribute="width" constant="260" id="ccF-ny-hw5"/>
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="leading" secondItem="bHc-Xf-d8i" secondAttribute="trailing" constant="20" id="dIL-qq-pSP"/>
-                                    <constraint firstItem="bHc-Xf-d8i" firstAttribute="top" secondItem="fNp-5g-vmW" secondAttribute="top" constant="140" id="e2G-eA-TIz"/>
                                     <constraint firstItem="OjB-LK-fhv" firstAttribute="height" secondItem="rYL-7L-d1G" secondAttribute="height" id="p0l-zt-DhJ"/>
                                     <constraint firstItem="bHc-Xf-d8i" firstAttribute="leading" secondItem="fNp-5g-vmW" secondAttribute="leading" constant="20" id="pnc-5U-X0B"/>
                                     <constraint firstItem="um0-fy-MIr" firstAttribute="leading" secondItem="fNp-5g-vmW" secondAttribute="leading" constant="20" id="rcl-or-fBW"/>
-                                    <constraint firstAttribute="height" constant="260" id="yA5-3G-0lc"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QrW-zK-XJA"/>
+                                        <exclude reference="MYh-Ig-T48"/>
+                                        <exclude reference="rcl-or-fBW"/>
+                                        <exclude reference="6tg-NU-ybT"/>
+                                        <exclude reference="TDV-Gx-KEF"/>
+                                        <exclude reference="pnc-5U-X0B"/>
+                                        <exclude reference="1xW-dh-pCF"/>
+                                        <exclude reference="ND6-pY-iPW"/>
+                                        <exclude reference="ZXG-de-ydc"/>
+                                        <exclude reference="2VG-rr-Nhy"/>
+                                        <exclude reference="7fM-Lf-G3z"/>
+                                        <exclude reference="8z6-Ln-Y0i"/>
+                                        <exclude reference="Al1-Ix-4We"/>
+                                        <exclude reference="DSa-to-0ff"/>
+                                        <exclude reference="KFY-v8-vSA"/>
+                                        <exclude reference="Y0t-AP-Ze8"/>
+                                        <exclude reference="dIL-qq-pSP"/>
+                                        <exclude reference="p0l-zt-DhJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="QrW-zK-XJA"/>
+                                        <include reference="MYh-Ig-T48"/>
+                                        <include reference="rcl-or-fBW"/>
+                                        <include reference="6tg-NU-ybT"/>
+                                        <include reference="TDV-Gx-KEF"/>
+                                        <include reference="pnc-5U-X0B"/>
+                                        <include reference="1xW-dh-pCF"/>
+                                        <include reference="ND6-pY-iPW"/>
+                                        <include reference="ZXG-de-ydc"/>
+                                        <include reference="2VG-rr-Nhy"/>
+                                        <include reference="7fM-Lf-G3z"/>
+                                        <include reference="8z6-Ln-Y0i"/>
+                                        <include reference="Al1-Ix-4We"/>
+                                        <include reference="DSa-to-0ff"/>
+                                        <include reference="KFY-v8-vSA"/>
+                                        <include reference="Y0t-AP-Ze8"/>
+                                        <include reference="dIL-qq-pSP"/>
+                                        <include reference="p0l-zt-DhJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="QrW-zK-XJA"/>
+                                        <include reference="MYh-Ig-T48"/>
+                                        <include reference="rcl-or-fBW"/>
+                                        <include reference="6tg-NU-ybT"/>
+                                        <include reference="TDV-Gx-KEF"/>
+                                        <include reference="pnc-5U-X0B"/>
+                                        <include reference="1xW-dh-pCF"/>
+                                        <include reference="ND6-pY-iPW"/>
+                                        <include reference="ZXG-de-ydc"/>
+                                        <include reference="2VG-rr-Nhy"/>
+                                        <include reference="7fM-Lf-G3z"/>
+                                        <include reference="8z6-Ln-Y0i"/>
+                                        <include reference="Al1-Ix-4We"/>
+                                        <include reference="DSa-to-0ff"/>
+                                        <include reference="KFY-v8-vSA"/>
+                                        <include reference="Y0t-AP-Ze8"/>
+                                        <include reference="dIL-qq-pSP"/>
+                                        <include reference="p0l-zt-DhJ"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="fNp-5g-vmW" secondAttribute="centerY" id="4MT-om-ZaC"/>
                             <constraint firstAttribute="centerX" secondItem="fNp-5g-vmW" secondAttribute="centerX" id="Ea4-Ql-aEL"/>
+                            <constraint firstItem="fNp-5g-vmW" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="fPk-OZ-k4v"/>
+                            <constraint firstItem="fNp-5g-vmW" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="fse-C4-xyr"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fPk-OZ-k4v"/>
+                                <exclude reference="fse-C4-xyr"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="fse-C4-xyr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="fPk-OZ-k4v"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="YUM-1v-jR8"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1537.5" y="312.5"/>
+            <point key="canvasLocation" x="1505.5" y="-159.5"/>
         </scene>
         <!--Terms Of Use View Controller-->
         <scene sceneID="1Ww-Uy-T4Y">

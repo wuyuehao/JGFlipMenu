@@ -26,8 +26,20 @@ class JGFlipMenuController: UIViewController, UINavigationControllerDelegate, JG
         assignDelegateAndTagSubviews(view)
         
         navigationController?.delegate = self
+
     }
     
+    override func viewDidLayoutSubviews(){
+        println("view did load")
+        for myView in view.subviews[0].subviews {
+            let myJGF = myView as! JGFlipMenuItem
+            myJGF.setup()
+        }
+        //myView.setNeedsDisplay()
+
+    }
+    
+  
     private func assignDelegateAndTagSubviews(view: UIView) {
         for subview in view.subviews as [AnyObject] {
             if let subSubView = subview as?  UIView {

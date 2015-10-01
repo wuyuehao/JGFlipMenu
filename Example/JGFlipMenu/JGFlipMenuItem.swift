@@ -162,9 +162,25 @@ protocol JGFlipMenuItemDelegate{
         return false
     }
     
-    private func setup() {
+    private func removeViews(view: UIView){
+        for v in view.subviews {
+            v.removeFromSuperview()
+        }
+    }
+    
+    public func setup() {
         
-        menuItemFrame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
+        menuItemFrame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.height)
+        if(self.superview != nil) {
+                println(self.superview!.frame.size.width)
+            println(self.frame.size.width)
+            menuItemFrame = CGRect(x: 0, y: 0, width: (self.superview!.frame.size.width - 60 )/2, height: (self.superview!.frame.size.height - 60 )/2)
+            
+            removeViews(self)
+            removeViews(self.backSideView)
+            removeViews(self.frontSideView)
+            
+        }
         
         backSideView.frame = menuItemFrame
         backSideView.backgroundColor = UIColor.whiteColor()
@@ -177,6 +193,9 @@ protocol JGFlipMenuItemDelegate{
         frontSideTitle = makeText(title)
         frontSideImageView = makeImage(frontImage)
         
+
+        
+        
         self.backSideView.addSubview(backSideImageView)
         self.backSideView.addSubview(backSideTitle)
         self.addSubview(backSideView)
@@ -184,6 +203,8 @@ protocol JGFlipMenuItemDelegate{
         self.frontSideView.addSubview(frontSideImageView)
         self.frontSideView.addSubview(frontSideTitle)
         self.addSubview(frontSideView)
+          
+        
     }
     
     private func makeText(text: String)-> UITextView {
